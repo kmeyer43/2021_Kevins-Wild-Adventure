@@ -43761,17 +43761,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1749887096}
     m_Modifications:
+    - target: {fileID: 2719835230323701832, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719835230323701832, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_Offset.x
+      value: -11
+      objectReference: {fileID: 0}
     - target: {fileID: 3382333811299356758, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3382333811299356758, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3382333811299356758, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3382333811299356758, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43808,6 +43816,10 @@ PrefabInstance:
     - target: {fileID: 3945936359416533881, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_Name
       value: FlyingF
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
