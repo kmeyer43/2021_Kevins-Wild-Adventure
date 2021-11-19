@@ -41865,13 +41865,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441719010}
-  m_LocalRotation: {x: -0, y: -0, z: -0.10840407, w: 0.99410695}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02753833, w: 0.99962074}
   m_LocalPosition: {x: 0.01674031, y: -0.20824529, z: 0}
   m_LocalScale: {x: 0.56679285, y: 0.55885863, z: 1}
   m_Children: []
   m_Father: {fileID: 1834181923}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.156}
 --- !u!212 &1441719012
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43441,13 +43441,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719798918}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.029296344, w: 0.9995708}
   m_LocalPosition: {x: 0.06674061, y: -0.1932454, z: 0}
   m_LocalScale: {x: 0.50230324, y: 0.5936569, z: 1}
   m_Children: []
   m_Father: {fileID: 1834181923}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.358}
 --- !u!212 &1719798920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43640,7 +43640,6 @@ GameObject:
   - component: {fileID: 1834181926}
   - component: {fileID: 1834181927}
   - component: {fileID: 1834181924}
-  - component: {fileID: 1834181922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -43695,23 +43694,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1834181922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834181919}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00090192a92878847b1e726690509c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 5
-  runSpeed: 10
-  jumpForce: 10
-  groundOffsetCheck: 1
-  groundDistanceCheck: 0.4
 --- !u!4 &1834181923
 Transform:
   m_ObjectHideFlags: 0
@@ -43742,6 +43724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4782ab32f68f74422a6756060a3e2741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 5
+  groundOffsetCheck: 1
+  groundDistanceCheck: 0.4
 --- !u!114 &1834181925
 MonoBehaviour:
   m_ObjectHideFlags: 0
