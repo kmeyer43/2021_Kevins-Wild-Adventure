@@ -7,6 +7,16 @@ public class playerMovement : MonoBehaviour
     // Reference to the Animator
     private Animator characterAnimator;
     private Rigidbody2D rb;
+
+    public float jumpForce;
+    private bool isGrounded;
+    public Transform feetPos;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+
+    private float jumpTimeCounter;
+    public float jumpTime;
+    private bool isJumping;
     
     [Header("Movement")]
     /// <summary>
@@ -42,16 +52,51 @@ public class playerMovement : MonoBehaviour
     private void Update()
     {
 
-      // Move the player left, right and jump
-      horizontalInput = Input.GetAxisRaw("Horizontal");
-      rb.velocity = new Vector2(horizontalInput * 7f, rb.velocity.y);
+        // Move the player left, right and jump
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(horizontalInput * 7f, rb.velocity.y);
+
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+
         // Set animation movement speed
         var animSpeed = horizontalInput;
         characterAnimator.SetFloat("Speed", Mathf.Abs(animSpeed));
 
-        if (Input.GetButtonDown("Jump")) {
-        rb.velocity = new Vector2(0, 7);
-      }
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        // Set jump animator to isJumping variable
+
+        characterAnimator.SetBool("isJumping", isJumping);
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        {
+            
+            isJumping = true;
+            
+            jumpTimeCounter = jumpTime;
+            rb.velocity = Vector2.up * jumpForce;
+        }
+
+        if(Input.GetKey(KeyCode.Space) && isJumping == true)
+
+        {
+            if(jumpTimeCounter > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            } else
+            {
+                isJumping = false;
+            }
+            
+        }
+
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
+        }
+
+        //if (Input.GetButtonDown("Jump")) {
+        // rb.velocity = new Vector2(0, 7);
+        //}
 
     }
 
