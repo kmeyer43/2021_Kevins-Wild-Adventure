@@ -18,7 +18,8 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            Die();
+    
+            RestartLevel();
         }
     }
 
