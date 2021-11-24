@@ -5,6 +5,7 @@ using UnityEngine;
  public class PlayerRespawn : MonoBehaviour {
      public float threshold;
  
+     // Creates a field that allows us to set the fall sound effect
      [SerializeField] private AudioSource fallSoundEffect;
 
      void FixedUpdate () {
