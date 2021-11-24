@@ -39,6 +39,9 @@ public class playerMovement : MonoBehaviour
     // Input
     private float horizontalInput;
 
+    // Create a field to allow us to set the jump sound effect
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -70,7 +73,7 @@ public class playerMovement : MonoBehaviour
         {
             
             isJumping = true;
-            
+            jumpSoundEffect.Play();
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -117,7 +120,7 @@ public class playerMovement : MonoBehaviour
         velocity.x = moveSpeed * moveDirection;
         transform.localScale = new Vector3(moveDirection, 1, 1);
         rb.velocity = velocity;
-    }
 
+    }
 
 }
