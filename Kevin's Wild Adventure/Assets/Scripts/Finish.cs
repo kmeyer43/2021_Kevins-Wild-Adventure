@@ -14,6 +14,7 @@ public class Finish : MonoBehaviour
         {
             DontDestroyOnLoad(playerFinishSoundEffect);
             playerFinishSoundEffect.Play();
+            TimerController.instance.EndTimer();
             CompleteLevel();
         }
     }

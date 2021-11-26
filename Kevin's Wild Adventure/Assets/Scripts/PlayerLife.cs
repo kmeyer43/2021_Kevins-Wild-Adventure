@@ -18,7 +18,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            RestartLevel();
+            transform.position = new Vector3(-13, -2, 0);
         }
     }
 
