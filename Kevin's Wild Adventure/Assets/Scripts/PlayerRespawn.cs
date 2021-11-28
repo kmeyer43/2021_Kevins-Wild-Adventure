@@ -11,7 +11,7 @@ using UnityEngine;
      void FixedUpdate () {
          if (transform.position.y < threshold) {
               fallSoundEffect.Play();
-              transform.position = new Vector3(-13, -2, 0);
+              transform.position = new Vector3(-13, 2, 0);
          }
      }
  }
