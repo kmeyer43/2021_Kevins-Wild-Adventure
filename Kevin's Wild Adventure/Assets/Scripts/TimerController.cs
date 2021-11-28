@@ -27,7 +27,6 @@ public class TimerController : MonoBehaviour
     {
         
     }
-
     public void BeginTimer()
     {
         timerGoing = true;
