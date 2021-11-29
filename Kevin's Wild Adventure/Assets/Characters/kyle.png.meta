@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 2c902d615f9aeb34384a258077bd732c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2600858132409483660
+    second: kyle_0
+  - first:
+      213: -2902189098583165697
+    second: kyle_1
+  - first:
+      213: 3992599568960534726
+    second: kyle_2
+  - first:
+      213: -7369780884521033925
+    second: kyle_3
+  - first:
+      213: -8009365749614700583
+    second: kyle_4
+  - first:
+      213: 94209324200387622
+    second: kyle_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +93,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kyle_0
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 770
+        width: 83
+        height: 81
+      alignment: 9
+      pivot: {x: 0.94216585, y: 0.067593046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47efb8afe45e7ebd0800000000000000
+      internalID: -2600858132409483660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kyle_1
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 801
+        width: 123
+        height: 188
+      alignment: 9
+      pivot: {x: 0.49458674, y: 0.021934347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff470fb246a59b7d0800000000000000
+      internalID: -2902189098583165697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kyle_2
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 762
+        width: 81
+        height: 87
+      alignment: 9
+      pivot: {x: 0.047946505, y: 0.07912331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8354e7720986730800000000000000
+      internalID: 3992599568960534726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kyle_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 671
+        width: 111
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5119948, y: 0.043837372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fd8a1155749b990800000000000000
+      internalID: -7369780884521033925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kyle_4
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 547
+        width: 38
+        height: 83
+      alignment: 9
+      pivot: {x: 0.81535417, y: 0.9652232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d71902494409d090800000000000000
+      internalID: -8009365749614700583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kyle_5
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 547
+        width: 37
+        height: 83
+      alignment: 9
+      pivot: {x: 0.19411324, y: 0.93313855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6246e7791e2be4100800000000000000
+      internalID: 94209324200387622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
