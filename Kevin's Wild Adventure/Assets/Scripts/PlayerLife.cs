@@ -7,7 +7,7 @@ public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,7 +18,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            transform.position = new Vector3(-13, 2, 0);
+            Die();
         }
     }
 
@@ -28,7 +28,7 @@ public class PlayerLife : MonoBehaviour
         anim.SetTrigger("Death");
     }
 
-    private void RestartLevel() 
+    private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
