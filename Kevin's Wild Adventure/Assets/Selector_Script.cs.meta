@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4d7cef023e1194a3699287d8b3dad6f0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Kevin: {fileID: 2808523507710428847, guid: 5f7b57c4903f94f649bbd77434449115, type: 3}
+  - Kyle: {fileID: 2682103333984295568, guid: d06e67077df1b4be5803a8c113067117, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
