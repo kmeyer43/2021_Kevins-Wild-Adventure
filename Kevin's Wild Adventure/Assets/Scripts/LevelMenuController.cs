@@ -16,12 +16,14 @@ public class LevelMenuController : MonoBehaviour
     {
 
         SceneManager.LoadScene("Level 2");
+        Time.timeScale = 1f;
     }
 
     public void playLevel3()
     {
 
         SceneManager.LoadScene("Level 3");
+        Time.timeScale = 1f;
     }
 
     public void back()
