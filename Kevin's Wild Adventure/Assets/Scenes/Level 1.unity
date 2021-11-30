@@ -48886,8 +48886,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1749887096}
     m_Modifications:
     - target: {fileID: 2110414541248418054, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110414541248418054, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110414541248418054, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110414541248418054, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110414541248418054, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2719835230323701832, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_Size.y
