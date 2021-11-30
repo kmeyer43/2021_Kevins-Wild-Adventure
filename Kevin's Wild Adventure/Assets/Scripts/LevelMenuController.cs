@@ -9,6 +9,7 @@ public class LevelMenuController : MonoBehaviour
     {
 
         SceneManager.LoadScene("Level 1");
+        Time.timeScale = 1f;
     }
 
     public void playLevel2()
