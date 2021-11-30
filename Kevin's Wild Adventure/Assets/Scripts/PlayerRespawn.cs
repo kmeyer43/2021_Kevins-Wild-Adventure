@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
- public class PlayerRespawn : MonoBehaviour {
+public class PlayerRespawn : MonoBehaviour {
      public float threshold;
  
      // Creates a field that allows us to set the fall sound effect
@@ -11,7 +12,14 @@ using UnityEngine;
      void FixedUpdate () {
          if (transform.position.y < threshold) {
               fallSoundEffect.Play();
-              transform.position = new Vector3(-13, 2, 0);
-         }
+              Invoke(nameof(Respawn), .02f);
+        }
      }
- }
+
+
+    void Respawn()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+}
