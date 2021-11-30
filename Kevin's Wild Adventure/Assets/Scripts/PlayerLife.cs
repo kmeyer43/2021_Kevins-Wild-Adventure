@@ -16,21 +16,34 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
+            Invoke(nameof(Respawn), 1.5f);
+
         }
+
     }
 
     private void Die()
     {
+
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("Death");
+        
     }
 
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    void Respawn()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
 }
