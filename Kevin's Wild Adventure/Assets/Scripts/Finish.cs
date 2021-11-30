@@ -21,7 +21,7 @@ public class Finish : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            DontDestroyOnLoad(playerFinishSoundEffect);
+            //DontDestroyOnLoad(playerFinishSoundEffect);
             playerFinishSoundEffect.Play();
             TimerController.instance.EndTimer();
             CompleteLevel();
@@ -40,6 +40,8 @@ public class Finish : MonoBehaviour
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        isStopped = false;
     }
 
 
