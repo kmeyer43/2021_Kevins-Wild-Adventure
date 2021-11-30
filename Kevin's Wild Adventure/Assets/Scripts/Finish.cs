@@ -11,6 +11,7 @@ public class Finish : MonoBehaviour
 
     public GameObject winMenu;
     public static bool isStopped;
+    public GameObject gameTimer;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
+        gameTimer.SetActive(false);
         winMenu.SetActive(true);
         Time.timeScale = 0f;
         isStopped = true;

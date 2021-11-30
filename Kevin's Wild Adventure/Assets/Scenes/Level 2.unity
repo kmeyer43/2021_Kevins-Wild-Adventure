@@ -6436,6 +6436,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 366759032}
     - target: {fileID: 5660581306317697990, guid: 1a6ae83c736846b4384d6c12d9d7385f, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1997912800}
+    - target: {fileID: 5660581306317697990, guid: 1a6ae83c736846b4384d6c12d9d7385f, type: 3}
       propertyPath: playerFinishSoundEffect
       value: 
       objectReference: {fileID: 1743458183}
@@ -49656,12 +49660,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8442368cd60adf44981040b9f3faae66, type: 3}
+--- !u!1 &1997912800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 797973707445873923, guid: 8442368cd60adf44981040b9f3faae66, type: 3}
+  m_PrefabInstance: {fileID: 1997912799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2024818004 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 797973707445873934, guid: 8442368cd60adf44981040b9f3faae66, type: 3}
   m_PrefabInstance: {fileID: 1997912799}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1997912800}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}

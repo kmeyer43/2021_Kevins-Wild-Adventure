@@ -2663,6 +2663,11 @@ Transform:
   m_Father: {fileID: 1834181923}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527014849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 797973707445873923, guid: ec99a80430b49034cb2e1ac4827e989d, type: 3}
+  m_PrefabInstance: {fileID: 1997912799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &536213397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6436,6 +6441,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 366759032}
     - target: {fileID: 5660581306317697990, guid: 3e49f19a9dda7044785ff733f42e546a, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 527014849}
+    - target: {fileID: 5660581306317697990, guid: 3e49f19a9dda7044785ff733f42e546a, type: 3}
       propertyPath: playerFinishSoundEffect
       value: 
       objectReference: {fileID: 1743458183}
@@ -6449,11 +6458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5660581306317698042, guid: 3e49f19a9dda7044785ff733f42e546a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.67
+      value: 65.66
       objectReference: {fileID: 0}
     - target: {fileID: 5660581306317698042, guid: 3e49f19a9dda7044785ff733f42e546a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.47
+      value: 5.36
       objectReference: {fileID: 0}
     - target: {fileID: 5660581306317698042, guid: 3e49f19a9dda7044785ff733f42e546a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49631,7 +49640,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 797973707445873934, guid: ec99a80430b49034cb2e1ac4827e989d, type: 3}
   m_PrefabInstance: {fileID: 1997912799}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 527014849}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
