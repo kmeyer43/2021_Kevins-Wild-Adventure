@@ -20,6 +20,7 @@ public class PlayerLife : MonoBehaviour
 
     // Creates a field that allows us to set the fall sound effect
     [SerializeField] private AudioSource fallSoundEffect;
+    [SerializeField] private AudioSource deathSoundEffect;
 
 
 
@@ -51,6 +52,7 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             LoseLife();
+            deathSoundEffect.Play();
             Die();
             Invoke(nameof(Respawn), 1.5f);
             

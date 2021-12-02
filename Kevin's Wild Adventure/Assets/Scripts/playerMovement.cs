@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+
     // Reference to the Animator
     private Animator characterAnimator;
     private Rigidbody2D rb;
@@ -39,8 +40,9 @@ public class playerMovement : MonoBehaviour
     // Input
     private float horizontalInput;
 
-    // Create a field to allow us to set the jump sound effect
+    // Create fielsd to allow us to set the jump and walking sound effects
     [SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource walkingSoundEffect;
 
     // Start is called before the first frame update
     private void Start()
@@ -49,6 +51,8 @@ public class playerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         // Get references
         characterAnimator = GetComponent<Animator>();
+        // Coroutine to set walking sound interval
+        StartCoroutine("WalkingSoundInterval");
     }
 
     // Update is called once per frame
@@ -74,6 +78,7 @@ public class playerMovement : MonoBehaviour
             
             isJumping = true;
             jumpSoundEffect.Play();
+            walkingSoundEffect.Stop();
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -103,8 +108,8 @@ public class playerMovement : MonoBehaviour
 
     }
 
-        private void FixedUpdate()
-    {
+        private void FixedUpdate() {
+
         // Get character velocity
         var velocity = rb.velocity;
         // Calculate character movement
@@ -122,5 +127,18 @@ public class playerMovement : MonoBehaviour
         rb.velocity = velocity;
 
     }
+
+    IEnumerator WalkingSoundInterval() {
+
+    yield return new WaitForSeconds(0.01f);
+ 
+    while(true)
+    {
+        if (isGrounded == true && Input.GetKey(KeyCode.D) || isGrounded == true && Input.GetKey(KeyCode.A)) {
+            walkingSoundEffect.Play();
+        }
+        yield return new WaitForSeconds(0.25f);
+    }
+}
 
 }
