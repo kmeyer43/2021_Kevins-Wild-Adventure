@@ -51933,9 +51933,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: -20
   lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1290105040}
+  - {fileID: 643625876}
+  - {fileID: 283146279}
   livesRemaining: 3
   gameOverMenu: {fileID: 404867094}
   fallSoundEffect: {fileID: 1834181928}
