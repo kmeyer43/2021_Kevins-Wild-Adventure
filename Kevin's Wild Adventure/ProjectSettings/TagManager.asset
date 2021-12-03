@@ -15,7 +15,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -50,4 +50,10 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 2450376973
+    locked: 0
+  - name: UI
+    uniqueID: 595897243
+    locked: 0
+  - name: New Layer
+    uniqueID: 724953343
     locked: 0
