@@ -125,3 +125,15 @@ span {
 	margin-right: auto;
 	padding-left: 7%;
 }
+
+.contactUs {
+	margin: auto;	
+}
+
+.emailList {
+	margin: auto;
+	width: 50%;
+	border: 10px solid green;
+	padding: 10px;
+	list-style-type: none;
+}
