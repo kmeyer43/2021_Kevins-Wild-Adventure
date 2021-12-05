@@ -121,9 +121,9 @@ span {
 
 .devImages {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 7%;
+	margin: auto;
+	width: 65%;
+	padding-left: 10px;
 }
 
 .contactUs {
@@ -134,6 +134,13 @@ span {
 	margin: auto;
 	width: 50%;
 	border: 10px solid green;
+	padding: 10px;
+	list-style-type: none;
+}
+
+.video-container {
+	margin: auto;
+	width: 30%;
 	padding: 10px;
 	list-style-type: none;
 }
