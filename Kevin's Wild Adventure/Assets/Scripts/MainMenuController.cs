@@ -10,9 +10,9 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("LevelMenu");
     }
 
-    public void options()
+    public void resetGame()
     {
-
+        PlayerPrefs.DeleteKey("levelAt");
     }
 
     public void exitGame()
