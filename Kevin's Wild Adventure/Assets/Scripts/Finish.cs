@@ -12,10 +12,12 @@ public class Finish : MonoBehaviour
     public GameObject winMenu;
     public static bool isStopped;
     public GameObject gameTimer;
+    public int nextSceneLoad;
 
     void Start()
     {
         winMenu.SetActive(false);
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,7 +43,14 @@ public class Finish : MonoBehaviour
     public void nextLevel()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //Move to next level
+        SceneManager.LoadScene(nextSceneLoad);
+
+        //Setting Int for Index
+        if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+        }
         Time.timeScale = 1f;
         isStopped = false;
     }
