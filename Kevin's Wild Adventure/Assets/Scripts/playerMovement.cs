@@ -27,17 +27,8 @@ public class playerMovement : MonoBehaviour
     [SerializeField]
     private float walkSpeed = 1f;
 
-    [Header("Ground check")]
-    /// <summary>
-    /// Ground check origin offset
-    /// </summary>
-    [SerializeField]
-    private float groundOffsetCheck = 1f;
-    /// <summary>
-    /// Ground check distance
-    /// </summary>
-    [SerializeField]
-    private float groundDistanceCheck = 0.4f;
+
+
     // Input
     private float horizontalInput;
 
@@ -117,7 +108,7 @@ public class playerMovement : MonoBehaviour
         var moveSpeed = 0f;
         var moveDirection = 1f;
         // Calculate move speed and direction
-        if (!Mathf.Approximately(horizontalInput, 0))
+        if (isDead == false && !Mathf.Approximately(horizontalInput, 0))
         {
             moveSpeed = walkSpeed;
             moveDirection = Mathf.Sign(horizontalInput);
