@@ -13,7 +13,7 @@ public class PlayerLife : MonoBehaviour
     public int livesRemaining;
     public GameObject gameOverMenu;
     public static bool isGameOver;
-
+    
 
 
 
@@ -67,7 +67,7 @@ public class PlayerLife : MonoBehaviour
 
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("Death");
-        
+       
 
     }
 

@@ -18,7 +18,8 @@ public class playerMovement : MonoBehaviour
     private float jumpTimeCounter;
     public float jumpTime;
     private bool isJumping;
-    
+    public bool isDead;
+
     [Header("Movement")]
     /// <summary>
     /// Character Walk Speed
@@ -73,7 +74,7 @@ public class playerMovement : MonoBehaviour
         // Set jump animator to isJumping variable
 
         characterAnimator.SetBool("isJumping", isJumping);
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded == true && isDead == false && Input.GetKeyDown(KeyCode.Space))
         {
             
             isJumping = true;
@@ -83,7 +84,7 @@ public class playerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
-        if(Input.GetKey(KeyCode.Space) && isJumping == true)
+        if(Input.GetKey(KeyCode.Space) && isJumping == true && isDead == false)
 
         {
             if(jumpTimeCounter > 0)
@@ -128,6 +129,30 @@ public class playerMovement : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+    
+            Die();
+            Invoke(nameof(Respawn), 1.5f);
+
+        }
+
+    }
+
+    private void Die()
+    {
+        isDead = true;
+    }
+
+    void Respawn()
+    {
+        isDead = false;
+
+    }
+
     IEnumerator WalkingSoundInterval() {
 
     yield return new WaitForSeconds(0.01f);
@@ -140,5 +165,7 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
     }
 }
+
+
 
 }
