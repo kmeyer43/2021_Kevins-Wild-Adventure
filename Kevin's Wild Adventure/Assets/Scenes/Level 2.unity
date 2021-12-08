@@ -4542,8 +4542,20 @@ PrefabInstance:
       value: 10.07
       objectReference: {fileID: 0}
     - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
       propertyPath: speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: distance.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: pauseTimeAtEnd
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5571563967848990330, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
       propertyPath: m_CastShadows
@@ -58019,8 +58031,20 @@ PrefabInstance:
       value: -0.82
       objectReference: {fileID: 0}
     - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
       propertyPath: speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: distance.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
+      propertyPath: pauseTimeAtEnd
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5571563967848990330, guid: 38cda0dbd155418469ca6494287d2f20, type: 3}
       propertyPath: m_CastShadows

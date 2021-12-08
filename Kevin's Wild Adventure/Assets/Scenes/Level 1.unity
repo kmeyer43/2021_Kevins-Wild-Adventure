@@ -55691,7 +55691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719835230323701832, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_Offset.x
-      value: -11
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 3382333811299356758, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_RootOrder
@@ -55746,8 +55746,20 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: speed
-      value: 5
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: distance.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
+      propertyPath: pauseTimeAtEnd
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5571563967848990330, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: m_CastShadows
