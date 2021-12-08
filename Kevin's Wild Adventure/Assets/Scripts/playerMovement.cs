@@ -112,7 +112,6 @@ public class playerMovement : MonoBehaviour
         {
             moveSpeed = walkSpeed;
             moveDirection = Mathf.Sign(horizontalInput);
-            WalkingSoundInterval();
         }
         // Set character velocity and direction
         velocity.x = moveSpeed * moveDirection;
