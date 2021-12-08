@@ -53001,7 +53001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 10
   feetPos: {fileID: 78222346}
-  checkRadius: 0.4
+  checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
