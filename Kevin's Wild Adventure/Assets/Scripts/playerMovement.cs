@@ -112,6 +112,7 @@ public class playerMovement : MonoBehaviour
         {
             moveSpeed = walkSpeed;
             moveDirection = Mathf.Sign(horizontalInput);
+            WalkingSoundInterval();
         }
         // Set character velocity and direction
         velocity.x = moveSpeed * moveDirection;
@@ -150,7 +151,7 @@ public class playerMovement : MonoBehaviour
  
     while(true)
     {
-        if (isGrounded == true && Input.GetKey(KeyCode.D) || isGrounded == true && Input.GetKey(KeyCode.A)) {
+        if (isGrounded == true && !Mathf.Approximately(horizontalInput, 0)) {
             walkingSoundEffect.Play();
         }
         yield return new WaitForSeconds(0.25f);
