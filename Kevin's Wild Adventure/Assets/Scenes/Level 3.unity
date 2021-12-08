@@ -7974,6 +7974,10 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5281780752357553404, guid: 87f8dd96d7e35c742a3d5b020423e5f7, type: 3}
+      propertyPath: distance.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5571563967848990330, guid: 87f8dd96d7e35c742a3d5b020423e5f7, type: 3}
       propertyPath: m_CastShadows
       value: 0
