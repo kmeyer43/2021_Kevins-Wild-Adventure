@@ -150,6 +150,7 @@ public class playerMovement : MonoBehaviour
  
     while(true)
     {
+
         if (isGrounded == true && !Mathf.Approximately(horizontalInput, 0)) {
             walkingSoundEffect.Play();
         }
