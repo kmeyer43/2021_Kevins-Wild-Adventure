@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+    public int startingLives;
     public void playGame()
     {
         SceneManager.LoadScene("LevelMenu");
@@ -12,7 +13,7 @@ public class MainMenuController : MonoBehaviour
 
     public void resetGame()
     {
-        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.SetInt("livesRemaining", startingLives);
         PlayerPrefs.DeleteKey("levelAt");
     }
 

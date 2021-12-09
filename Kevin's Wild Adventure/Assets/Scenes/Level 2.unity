@@ -55243,6 +55243,7 @@ MonoBehaviour:
   - {fileID: 283146279}
   gameOverMenu: {fileID: 404867094}
   addLives: {fileID: 890865081}
+  startingLives: 5
   fallSoundEffect: {fileID: 1834181928}
   deathSoundEffect: {fileID: 1834181925}
 --- !u!95 &1834181927
