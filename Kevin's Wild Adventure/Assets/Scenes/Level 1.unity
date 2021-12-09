@@ -56018,7 +56018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: distance.x
-      value: -20
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 5281780752357553404, guid: 784e13bd0c162cc4fa07138992eb3d77, type: 3}
       propertyPath: pauseTimeAtEnd
