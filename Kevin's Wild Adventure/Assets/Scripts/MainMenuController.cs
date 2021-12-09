@@ -12,6 +12,7 @@ public class MainMenuController : MonoBehaviour
 
     public void resetGame()
     {
+        PlayerPrefs.SetInt("livesRemaining", 5);
         PlayerPrefs.DeleteKey("levelAt");
     }
 

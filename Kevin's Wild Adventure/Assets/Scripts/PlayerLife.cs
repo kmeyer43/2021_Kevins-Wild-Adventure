@@ -10,9 +10,11 @@ public class PlayerLife : MonoBehaviour
     private Animator anim;
     public float threshold;
     public Image[] lives;
-    public int livesRemaining;
+    int livesRemaining;
     public GameObject gameOverMenu;
     public static bool isGameOver;
+   
+    //public int storedLife;
     
 
 
@@ -37,14 +39,24 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-    private void Start()
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         gameOverMenu.SetActive(false);
-       
-          
+        int storedLife = PlayerPrefs.GetInt("livesRemaining");
+
+        for (int i = 0; i < lives.Length; i++)
+        {
+            if (i + 1 > storedLife)
+                lives[i].enabled = false;
+        }
+
+        livesRemaining = storedLife;
+        
     }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -92,7 +104,7 @@ public class PlayerLife : MonoBehaviour
          
 
         livesRemaining--;
-
+        PlayerPrefs.SetInt("livesRemaining", livesRemaining);
         lives[livesRemaining].enabled = false;
 
         if(livesRemaining == 0)
@@ -119,16 +131,22 @@ public class PlayerLife : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.DeleteKey("levelAt");
     }
 
     public void quitGame()
     {
         Application.Quit();
+        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.DeleteKey("levelAt");
     }
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Level 1");
+        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.DeleteKey("levelAt");
         gameOverMenu.SetActive(false);
         Time.timeScale = 1f;
         isGameOver = false;
