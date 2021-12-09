@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
@@ -63,10 +62,10 @@ public class playerMovement : MonoBehaviour
         characterAnimator.SetFloat("Speed", Mathf.Abs(animSpeed));
 
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-
         // Set jump animator to isJumping variable
+
         characterAnimator.SetBool("isJumping", isJumping);
-        if (isGrounded == true && isDead == false && Input.GetButtonDown("Jump"))
+        if (isGrounded == true && isDead == false && Input.GetKeyDown(KeyCode.Space))
         {
             
             isJumping = true;
@@ -76,7 +75,7 @@ public class playerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
-        if(Input.GetButtonDown("Jump") && isJumping == true && isDead == false)
+        if(Input.GetKey(KeyCode.Space) && isJumping == true && isDead == false)
 
         {
             if(jumpTimeCounter > 0)
@@ -90,7 +89,7 @@ public class playerMovement : MonoBehaviour
             
         }
 
-        if(!Input.GetButtonDown("Jump"))
+        if(Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
         }

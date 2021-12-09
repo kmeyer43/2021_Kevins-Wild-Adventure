@@ -53079,8 +53079,11 @@ GameObject:
   - component: {fileID: 1834181928}
   - component: {fileID: 1834181925}
   - component: {fileID: 1834181930}
+<<<<<<< HEAD
   - component: {fileID: 1834181929}
   - component: {fileID: 1834181931}
+=======
+>>>>>>> parent of 8d43079 ([Finishes #180590342] Added support for controllers to the game)
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -53262,13 +53265,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4782ab32f68f74422a6756060a3e2741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 20
+  jumpForce: 10
   feetPos: {fileID: 78222346}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  jumpTime: 1.5
+  jumpTime: 0.35
   isDead: 0
   walkSpeed: 5
   jumpSoundEffect: {fileID: 1834181922}
@@ -53509,36 +53512,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1834181929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834181919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 706f8c42913154d0e889b04361a66f04, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Global Controls
-  m_DefaultActionMap: Controls
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!82 &1834181930
 AudioSource:
   m_ObjectHideFlags: 0
