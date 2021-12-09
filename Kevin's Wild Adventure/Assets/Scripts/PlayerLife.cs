@@ -21,9 +21,10 @@ public class PlayerLife : MonoBehaviour
 
 
 
-    // Creates a field that allows us to set the fall sound effect
+    // Creates fields to set sound effects
     [SerializeField] private AudioSource fallSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
+    [SerializeField] private AudioSource addLifeSoundEffect;
 
 
 
@@ -86,7 +87,7 @@ public class PlayerLife : MonoBehaviour
         {
             Debug.Log("AddLife");
             addLife();
-
+            addLifeSoundEffect.Play();
         }
     }
 
