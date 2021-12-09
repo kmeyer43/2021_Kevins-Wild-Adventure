@@ -14,6 +14,7 @@ public class PlayerLife : MonoBehaviour
     public GameObject gameOverMenu;
     public static bool isGameOver;
     public GameObject addLives;
+    public int startingLives;
 
 
 
@@ -21,9 +22,10 @@ public class PlayerLife : MonoBehaviour
 
 
 
-    // Creates a field that allows us to set the fall sound effect
+    // Creates fields to set sound effects
     [SerializeField] private AudioSource fallSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
+    [SerializeField] private AudioSource addLifeSoundEffect;
 
 
 
@@ -86,7 +88,7 @@ public class PlayerLife : MonoBehaviour
         {
             Debug.Log("AddLife");
             addLife();
-
+            addLifeSoundEffect.Play();
         }
     }
 
@@ -141,8 +143,7 @@ public class PlayerLife : MonoBehaviour
             lives[livesRemaining].enabled = true;
             livesRemaining++;
             PlayerPrefs.SetInt("livesRemaining", livesRemaining);
-            
-            
+                      
             addLives.SetActive(false);
 }
 
@@ -164,21 +165,22 @@ public class PlayerLife : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
-        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.SetInt("livesRemaining", startingLives);
         PlayerPrefs.DeleteKey("levelAt");
     }
 
     public void quitGame()
     {
-        Application.Quit();
-        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.SetInt("livesRemaining", startingLives);
         PlayerPrefs.DeleteKey("levelAt");
+        Application.Quit();
+
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene("Level 1");
-        PlayerPrefs.SetInt("livesRemaining", 5);
+        PlayerPrefs.SetInt("livesRemaining", startingLives);
         PlayerPrefs.DeleteKey("levelAt");
         gameOverMenu.SetActive(false);
         Time.timeScale = 1f;
