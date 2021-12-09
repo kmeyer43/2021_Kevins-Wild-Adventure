@@ -13,9 +13,10 @@ public class PlayerLife : MonoBehaviour
     int livesRemaining;
     public GameObject gameOverMenu;
     public static bool isGameOver;
-   
-    //public int storedLife;
-    
+    public GameObject addLives;
+
+
+
 
 
 
@@ -72,6 +73,21 @@ public class PlayerLife : MonoBehaviour
 
         }
 
+
+
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D trigger)
+    {
+        if (trigger.gameObject.CompareTag("addLife"))
+
+
+        {
+            Debug.Log("AddLife");
+            addLife();
+
+        }
     }
 
     private void Die()
@@ -114,6 +130,23 @@ public class PlayerLife : MonoBehaviour
             Time.timeScale = 0f;
             isGameOver = true;
         }
+
+
+    }
+
+    public void addLife()
+    {
+        if (livesRemaining < 5)
+        {
+            lives[livesRemaining].enabled = true;
+            livesRemaining++;
+            PlayerPrefs.SetInt("livesRemaining", livesRemaining);
+            
+            
+            addLives.SetActive(false);
+}
+
+
 
 
     }

@@ -9,6 +9,7 @@ TagManager:
   - ShowOnPause
   - Lives
   - Reset
+  - addLife
   layers:
   - Default
   - TransparentFX
