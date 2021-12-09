@@ -49,6 +49,7 @@ public class Finish : MonoBehaviour
         //Setting Int for Index
         if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
         {
+            // set new playerPrefs variable
             PlayerPrefs.SetInt("levelAt", nextSceneLoad);
         }
         Time.timeScale = 1f;
