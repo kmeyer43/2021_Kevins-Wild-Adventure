@@ -2626,6 +2626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888f677ae412a2140a97a6fb83e580c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingLives: 5
 --- !u!213 &612490978
 Sprite:
   m_ObjectHideFlags: 0
