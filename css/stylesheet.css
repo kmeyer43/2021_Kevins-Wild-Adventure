@@ -126,6 +126,13 @@ span {
 	padding-left: 10px;
 }
 
+.finalImages {
+	display: block;
+	margin: auto;
+	width: 65%;
+	padding-left: 10px;	
+}
+
 .contactUs {
 	margin: auto;	
 }
