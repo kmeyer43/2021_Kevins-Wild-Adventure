@@ -86,9 +86,10 @@ public class PlayerLife : MonoBehaviour
 
 
         {
-            Debug.Log("AddLife");
+            //Debug.Log("AddLife");
             addLife();
-            addLifeSoundEffect.Play();
+            addLives.SetActive(false);
+
         }
     }
 
@@ -143,8 +144,8 @@ public class PlayerLife : MonoBehaviour
             lives[livesRemaining].enabled = true;
             livesRemaining++;
             PlayerPrefs.SetInt("livesRemaining", livesRemaining);
-                      
-            addLives.SetActive(false);
+            addLifeSoundEffect.Play();
+            
 }
 
 
