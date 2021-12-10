@@ -33,6 +33,11 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
+        //Setting Int for Index
+        if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+        }
         gameTimer.SetActive(false);
         winMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -45,12 +50,6 @@ public class Finish : MonoBehaviour
 
         //Move to next level
         SceneManager.LoadScene(nextSceneLoad);
-
-        //Setting Int for Index
-        if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
-        {
-            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
-        }
         Time.timeScale = 1f;
         isStopped = false;
     }
