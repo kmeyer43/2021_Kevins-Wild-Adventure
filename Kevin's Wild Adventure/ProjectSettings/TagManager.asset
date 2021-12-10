@@ -10,6 +10,7 @@ TagManager:
   - Lives
   - Reset
   - addLife
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

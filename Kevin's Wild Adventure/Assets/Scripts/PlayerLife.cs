@@ -108,8 +108,7 @@ public class PlayerLife : MonoBehaviour
     void Respawn()
     {
         rb.bodyType = RigidbodyType2D.Dynamic;
-        transform.position = new Vector3(-13, -2, 0);
-
+        transform.position = CheckpointController.lastCheckPoint;
     }
 
 
@@ -132,6 +131,7 @@ public class PlayerLife : MonoBehaviour
             gameOverMenu.SetActive(true);
             Time.timeScale = 0f;
             isGameOver = true;
+            CheckpointController.ResetCheckpoint();
         }
 
 
