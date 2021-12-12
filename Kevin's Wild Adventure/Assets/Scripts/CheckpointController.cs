@@ -20,6 +20,7 @@ public class CheckpointController : MonoBehaviour
         {
             checkPointPos = transform.position;
             checkPointPos.y += 4;
+            checkPointPos.x += -1;
             lastCheckPoint = checkPointPos;
             if (!alreadyPlayed) {
                 checkPointSoundEffect.Play();
