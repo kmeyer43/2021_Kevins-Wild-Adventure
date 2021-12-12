@@ -12,11 +12,15 @@ public class CheckpointController : MonoBehaviour
 
     public static Vector3 lastCheckPoint = new Vector3(-13, -2, 0);
 
+    Vector3 checkPointPos;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.transform.tag == "Player")
         {
-            lastCheckPoint = transform.position;
+            checkPointPos = transform.position;
+            checkPointPos.y += 4;
+            lastCheckPoint = checkPointPos;
             if (!alreadyPlayed) {
                 checkPointSoundEffect.Play();
                 alreadyPlayed = true;

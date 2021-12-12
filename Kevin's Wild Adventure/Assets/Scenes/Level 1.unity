@@ -1521,6 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkPointSoundEffect: {fileID: 234398118}
+  alreadyPlayed: 0
 --- !u!61 &234398115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1538,8 +1539,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.55, y: 1.78}
-    newSize: {x: 1.55, y: 1.78}
+    oldSize: {x: 1.33, y: 1.29}
+    newSize: {x: 1.33, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1587,12 +1588,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 32348c1b1a4c7c34ab4bec1b5a89d1ca, type: 3}
+  m_Sprite: {fileID: -3448120935943364757, guid: 32348c1b1a4c7c34ab4bec1b5a89d1ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.55, y: 1.78}
+  m_Size: {x: 1.33, y: 1.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1606,8 +1607,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234398113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.62, y: -0.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 27.62, y: -0.38, z: 0}
+  m_LocalScale: {x: 0.9125, y: 0.88970137, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1632,7 +1633,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.4809298
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1717,7 +1718,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 273420290326043998, guid: 6c3b203eb3e7cfd4cad93c72a425da1b, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 273420290326043998, guid: 6c3b203eb3e7cfd4cad93c72a425da1b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5084,7 +5085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2195841803576410305, guid: 2efb63d45585d0e4e9c086c5f64a8fc1, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2195841803576410305, guid: 2efb63d45585d0e4e9c086c5f64a8fc1, type: 3}
       propertyPath: m_LocalScale.x
@@ -54011,7 +54012,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 273420290326043998, guid: 6c3b203eb3e7cfd4cad93c72a425da1b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 273420290326043998, guid: 6c3b203eb3e7cfd4cad93c72a425da1b, type: 3}
       propertyPath: m_LocalScale.x
