@@ -6,8 +6,19 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
     public int startingLives;
+
+    private void Start()
+    {
+        int storedLife = PlayerPrefs.GetInt("livesRemaining");
+        if (storedLife <= 0)
+        {
+            PlayerPrefs.SetInt("livesRemaining", startingLives);
+        }
+    }
+    
     public void playGame()
     {
+
         SceneManager.LoadScene("LevelMenu");
     }
 
