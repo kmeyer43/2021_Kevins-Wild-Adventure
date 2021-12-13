@@ -52,6 +52,7 @@ public class Finish : MonoBehaviour
         SceneManager.LoadScene(nextSceneLoad);
         Time.timeScale = 1f;
         isStopped = false;
+        CheckpointController.ResetCheckpoint();
     }
 
 
@@ -72,6 +73,7 @@ public class Finish : MonoBehaviour
         winMenu.SetActive(false);
         Time.timeScale = 1f;
         isStopped = false;
+        CheckpointController.ResetCheckpoint();
     }
 
 
