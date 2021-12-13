@@ -35,6 +35,7 @@ public class PlayerLife : MonoBehaviour
         {
             LoseLife();
             fallSoundEffect.Play();
+            
             Respawn();
 
             
@@ -69,6 +70,7 @@ public class PlayerLife : MonoBehaviour
             LoseLife();
             deathSoundEffect.Play();
             Die();
+            
             Invoke(nameof(Respawn), 1.5f);
             
 
@@ -107,6 +109,7 @@ public class PlayerLife : MonoBehaviour
 
     void Respawn()
     {
+        rb.velocity = new Vector3();
         rb.bodyType = RigidbodyType2D.Dynamic;
         transform.position = CheckpointController.lastCheckPoint;
     }

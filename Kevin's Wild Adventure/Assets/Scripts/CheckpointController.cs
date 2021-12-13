@@ -19,7 +19,7 @@ public class CheckpointController : MonoBehaviour
         if(collision.transform.tag == "Player")
         {
             checkPointPos = transform.position;
-            checkPointPos.y += 4;
+            
             checkPointPos.x += -1;
             lastCheckPoint = checkPointPos;
             if (!alreadyPlayed) {
