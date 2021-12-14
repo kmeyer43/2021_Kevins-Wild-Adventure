@@ -48,6 +48,7 @@ public class PlayerLife : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         gameOverMenu.SetActive(false);
+        isGameOver = false;
         CheckpointController.ResetCheckpoint();
         int storedLife = PlayerPrefs.GetInt("livesRemaining");
 

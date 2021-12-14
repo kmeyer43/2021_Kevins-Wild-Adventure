@@ -16,6 +16,7 @@ public class Finish : MonoBehaviour
 
     void Start()
     {
+        isStopped = false;
         winMenu.SetActive(false);
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
