@@ -119,7 +119,7 @@ span {
     color: #2BD6B4;
 }
 
-.devImages {
+/* .devImages {
 	display: block;
 	margin: auto;
 	width: 65%;
@@ -129,8 +129,16 @@ span {
 .finalImages {
 	display: block;
 	margin: auto;
-	width: 65%;
+	max-width: 65%;
 	padding-left: 10px;	
+} */
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 65%;
+	height: auto;
+	padding-left: 10px;
 }
 
 .contactUs {
